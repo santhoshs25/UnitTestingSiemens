@@ -1,1 +1,4 @@
-<app-greeter [message]="'unit testing works'"></app-greeter>
+<!-- <app-greeter [message]="'unit testing works'"></app-greeter> -->
+
+<app-search (searchKeyChanged)="onSearchKeyChanged($event)"></app-search>
+<app-display [content]="searchKey"></app-display>

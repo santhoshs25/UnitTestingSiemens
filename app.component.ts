@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sample';
+
+  searchKey: string = "";
+
+  onSearchKeyChanged(key: string) {
+    this.searchKey = key;
+  }
 }
